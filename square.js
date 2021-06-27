@@ -1,12 +1,10 @@
 function betweenSquares(number){
-  iteration = 0
-  while(true){
+  for(let iteration = 0; iteration<1000000; iteration++)
     var bigger = iteration+1;
     var smaller = iteration;
     
-    if (Math.pow(bigger,2) - Math.pow(smaller,2) == number) {
+    if (Math.pow(bigger,2) - Math.pow(smaller,2) === number) {
       return Math.pow(bigger,2)+"-"+Math.pow(smaller,2)
     }
-    iteration+=1
   } 
 }
