@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>4</title>
+        <style type="text/css">
+            body {
+                color: #010101;
+                margin: 0;
+                font-family: "Arial";
+            }
+
+            .block {
+                width: 76%;
+                display: flex;
+                position: absolute;
+                margin: 0;
+                left: 50%;
+                top: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                justify-content: space-between;
+            }
+
+            .text {
+                width: 55%;
+            }
+
+            .space {
+                width: 44%;
+                height: 450px;
+                background-color: #231f20;
+                border-radius: 15px;
+            }
+
+            .title {
+                font-size: 38px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-right: 68px;
+                margin-top: 60px;
+                text-align: right;
+            }
+
+            .suptitle {
+                font-size: 30px;
+                text-align: center;
+                margin: 60px;
+                margin-top: 40px;
+                margin-left: 260px;
+                font-family: arial;
+                color: rgb(24, 14, 0);
+            }
+
+            /*Stars*/
+            .stars {
+                position: absolute;
+                background-color: #ffffff;
+                border-radius: 50%;
+            }
+
+            .star-0 {
+                width: 5px;
+                height: 5px;
+                top: 3%;
+                right: 41%;
+            }
+            .star-1 {
+                width: 11px;
+                height: 11px;
+                top: 10%;
+                right: 28%;
+            }
+            .star-2 {
+                width: 11px;
+                height: 11px;
+                top: 45%;
+                right: 5%;
+            }
+            .star-3 {
+                width: 5px;
+                height: 5px;
+                top: 64%;
+                right: 20%;
+                z-index: 5;
+            }
+            .star-4 {
+                width: 11px;
+                height: 11px;
+                top: 79%;
+                right: 13%;
+            }
+            .star-5 {
+                width: 5px;
+                height: 5px;
+                top: 83%;
+                right: 36%;
+            }
+            .star-6 {
+                width: 19px;
+                height: 19px;
+                top: 87%;
+                right: 14%;
+            }
+
+            /*Venus*/
+            .Venus {
+                position: absolute;
+                top: 122px;
+                left: 717px;
+                height: 180px;
+                width: 180px;
+                background-color: #c3996b;
+                margin-left: 21%;
+                border-radius: 50%; 
+                overflow: hidden;
+            }
+
+            .shadow-1 {
+                overflow: hidden;
+                position: absolute;
+                top: -192px;
+                left: -146px;
+                height: 320px;
+                width: 320px;
+                background-color: #c3996b;
+                border-radius: 50%;
+                box-shadow: 0px 0px 0px 50px #a17e58;
+            }
+            .shadow-2 {
+                overflow: hidden;
+                position: absolute;
+                top: -28px;
+                left: -18px;
+                height: 185px;
+                width: 185px;
+                background-color: transparent;
+                border-radius: 50%;
+                box-shadow: 0px 0px 0 80px #4e3b2a;
+            }
+
+            .VenusCircle {
+                width: 13px;
+                height: 13px;
+                position: absolute;
+                border-radius: 50%;
+                background-color: #a65726;
+            }
+
+            .VenusCircles-1 {
+                top: 50px;
+                left: 20px;
+            }
+            .VenusCircles-2 {
+                top: 60px;
+                left: 42px;
+            }
+            .VenusCircles-3 {
+                top: 72px;
+                left: 12px;
+            }
+
+            .line {
+                position: absolute;
+                height: 14px;
+                width: 150px;
+                border-radius: 8px;
+                background-color: #a65726;
+            }
+
+            .z3 {
+                z-index: 4;
+            }
+
+            .VenusLine-1 {
+                top: 230px;
+                left: 195px;
+
+            }
+            .VenusLine-2 {
+                top: 202px;
+                left: 210px;
+            }
+            .VenusLine-3 {
+                top: 216px;
+                left: 210px;
+            }
+            .VenusLine-4 {
+                top: 216px;
+                left: 280px;
+                background-color: #c3996b;
+            }
+            .VenusLine-5 {
+                top: 216px;
+                left: 110px;
+                background-color: #c3996b;
+            }
+            .VenusLine-6 {
+                top: 288px;
+                left: 232px;
+            }
+            .VenusLine-6-d {
+                top: 302px;
+                left: 92px;
+                background-color: #c3996b;
+            }
+
+
+            .z2 {
+                z-index: 3;
+                background-color: #89481f;
+            }
+
+            .VenusLine-7 {
+                top: 66px;
+                left: 75px;
+            }
+            .VenusLine-8 {
+                top: 124px;
+                left: 104px;
+            }
+            .VenusLine-9 {
+                top: 152px;
+                left: 65px;
+            }
+            .VenusLine-10 {
+                top: 138px;
+                left: 145px;
+                background-color: #a17e58;
+            }
+            .VenusLine-11 {
+                top: 138px;
+                left: 75px;
+            }
+            .VenusLine-12 {
+                top: 138px;
+                left: -20px;
+                background-color: #a17e58;
+            }
+            .VenusLine-13 {
+                top: 166px;
+                left: -65px;
+                background-color: #a17e58;
+            }
+            .VenusLine-14 {
+                top: 166px;
+                left: 55px;
+            }
+            .VenusLine-15 {
+                top: 166px;
+                left: 100px;
+                background-color: #a17e58;
+            }
+            .VenusLine-16 {
+                top: 180px;
+                left: 50px;
+            }
+
+            .z1 {
+                z-index: 2; 
+                background-color: #42220f;
+            }
+
+            .VenusLine-17 {
+                top: 38px;
+                left: 55px;
+            }
+            .VenusLine-18 {
+                top: 96px;
+                left: 100px;
+            }
+            .VenusLine-19 {
+                top: 124px;
+                left: 50px;
+            }
+            .VenusLine-20 {
+                height: 42px;
+                top: 152px;
+                left: 10px;
+            }
+            .VenusLine-21 {
+                top: 165px;
+                left: 120px;
+                height: 13px;
+                background-color: #4e3b2a;
+            }
+            .VenusLine-22 {
+                top: 165px;
+                left: -50px;
+                height: 13px;
+                background-color: #4e3b2a;
+            }
+        </style>
+        
+    </head>
+        
+        <div class="block">
+            
+            <div class="text">
+                <div class="title">
+                    Venus
+                </div>
+                <div class="suptitle">
+                    One of the only two planets in our <br> Solar System that as no moons.
+                </div>
+            </div>
+            
+            <div class="space">
+               <div class="Venus">
+                    
+                    
+                    <div class="shadow-1">
+                        <div class="z3 line VenusLine-1"></div>
+                        <div class="z3 line VenusLine-2"></div>
+                        <div class="z3 line VenusLine-3"></div>
+                        <div class="z3 line VenusLine-4"></div>
+                        <div class="z3 line VenusLine-5"></div>
+                        <div class="z3 line VenusLine-6"></div>
+                        <div class="z3 line VenusLine-6-d"></div>
+                    </div>
+                    <div class="shadow-2">
+                        <div class="z2 line VenusLine-7"></div>
+                        <div class="z2 line VenusLine-8"></div>
+                        <div class="z2 line VenusLine-9"></div>
+                        <div class="z2 line VenusLine-11"></div>
+                        <div class="z2 line VenusLine-10"></div>
+                        <div class="z2 line VenusLine-12"></div>
+                        <div class="z2 line VenusLine-14"></div>
+                        <div class="z2 line VenusLine-15"></div>
+                        <div class="z2 line VenusLine-13"></div>
+                        <div class="z2 line VenusLine-16"></div>
+                    </div>
+                    
+                        <div class="z1 line VenusLine-17"></div>
+                        <div class="z1 line VenusLine-18"></div>
+                        <div class="z1 line VenusLine-19"></div>
+                        <div class="z1 line VenusLine-20"></div>
+                        <div class="z1 line VenusLine-21"></div>
+                        <div class="z1 line VenusLine-22"></div>
+                    
+                    <div class="threeCircles">
+                        <div class="VenusCircle VenusCircles-1"></div>
+                        <div class="VenusCircle VenusCircles-2"></div>
+                        <div class="VenusCircle VenusCircles-3"></div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                <div class="stars star-0"></div>
+                <div class="stars star-1"></div>
+                <div class="stars star-2"></div>
+                <div class="stars star-3"></div>
+                <div class="stars star-4"></div>
+                <div class="stars star-5"></div>
+                <div class="stars star-6"></div>
+                
+            </div>
+            
+        </div>
+        
+    <body>
+        
+    </body>
+</html>
