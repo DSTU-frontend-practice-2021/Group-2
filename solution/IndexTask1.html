@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>1</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                background-color: #f1f1f1;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                overflow: hidden;
+            }
+
+            .Circle {
+                fill: #2e54b7;
+                height: 170px;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%, -50%);
+            }
+
+            .Text_block-1 {
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%, -50%) rotate(-7deg);
+                width: 150%;
+                height: 120px;
+                margin: auto;
+                z-index: -1;
+                background-color: #ffffff;
+                text-transform: uppercase;
+                font-size: 100px;
+            }
+
+            .Text_block-2 {
+                position: absolute;
+                color: #2e54b7;
+                top:50%;
+                left:50%;
+                transform:translate(-50%, -50%) rotate(7deg);
+                width: 150%;
+                height: 120px;
+                margin: auto;
+                z-index: -2;
+                background-color: #e0e0e0;
+                text-transform: uppercase;
+                font-size: 100px;
+            }
+
+            .Circle_text {
+                width: 170px;
+                text-align: center;
+                position: absolute;
+                text-transform: uppercase;
+                top:50%;
+                left:50%;
+                transform:translate(-50%, -50%);
+                color: #f1f1f1;
+                font-size: 12px;
+            }
+
+            .Circle:hover {
+                transition: 1s;
+                fill: #000000;
+            }
+
+            .Circle:hover .Circle_text{
+                transition: 1s;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .Circle:hover + .Text_block-1 {
+                transition: 1.5s;
+                transform: translate(-50%, -50%) rotate(367deg);
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+        <div class="Circle">
+            <div class="svg">
+                <svg width="170" height="170">
+                    <circle r="85" cx="85" cy="85" fill=""/>
+                </svg>
+            </div>
+            <div class="Circle_text">
+                Send a request
+            </div>
+        </div>
+    
+        
+        <div class="Text_block-1">
+            <nobr>123.. get in <i><b>touch</b></i> get in <i><b>touch</b></i> get in <i><b>touch</b></i> get in <i><b>touch</b></i> get in <i><b>touch</b></i> get in <i><b>touch</b></i>
+            </nobr>
+        </div>
+        
+        <div class="Text_block-2">
+            <nobr>123 get in <i><b>touch</b></i> get in <i><b>touch</b></i> get in <i><b>touch</b></i> get in <i><b>touch</b></i> get in <i><b>touch</b></i> get in <i><b>touch</b></i>
+            </nobr>
+        </div>
+    </body>
+</html>
