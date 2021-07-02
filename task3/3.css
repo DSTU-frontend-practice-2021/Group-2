@@ -1,0 +1,215 @@
+body{
+    animation-name: change-background;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes change-background {
+  0% {
+    background: #ffe8e8;
+  }
+  20% {
+    background: #ffe5db;
+  }
+  60% {
+    background: #eff0ca;
+  }
+  90%{
+    background: #ffe5db;
+  }
+  100%{
+    background: #ffe8e8;
+  }
+}
+
+@keyframes drop
+{
+    70%{
+        transform: translateY(100px) rotate(135deg);
+        width: 2em;
+      }
+    90% {
+        transform: translateY(100px) rotate(0deg);
+        border-radius: 50%;
+        background: none;
+        border:dotted;
+        width: 2em;
+        height: 2em;
+      }
+      100%{
+        transform: translateY(0) rotate(0deg);
+        border-radius: 50%;
+        background: none;
+        border:3px solid rgb(97, 75, 177);
+        width: 5em;
+        height: 5em;
+      }
+}
+
+
+
+.round{
+    z-index: -3;
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    margin-top: 5%;
+    margin-left: 20%;
+    border-radius:50%;
+}
+
+
+@keyframes forR1
+{
+    0%{
+    border:3px solid rgb(168, 238, 157);
+}
+      100%{
+        transform: translateX(-100px) rotate(0deg);
+        border-radius: 50%;
+        background: none;
+        border:3px solid rgb(27, 206, 0);
+        width: 5em;
+        height: 5em;
+      }
+}
+
+@keyframes forR2
+{
+    0%{
+        border:3px solid rgb(212, 93, 93);
+    }
+      100%{
+        transform: translateX(100px) rotate(0deg);
+        border-radius: 50%;
+        background: none;
+        border:3px solid rgb(175, 0, 0);
+        width: 5em;
+        height: 5em;
+      }
+}
+
+
+@keyframes forR31
+{
+     0%
+    {
+      border:4px double rgb(3, 184, 160);
+      box-shadow: 
+    3px -3px 0 2px rgba(240, 170, 89, 0.432),
+    -3px -3px 0 2px rgba(195, 0, 255, 0.253),
+    3px 3px 0 2px rgba(17, 0, 255, 0.37),
+    -5px -5px 0 2px rgba(7, 255, 243, 0.37),
+    5px 5px 0 2px rgba(10, 216, 10, 0.473),
+    -5px 5px 0 2px rgba(217, 255, 0, 0.37),
+    5px -5px 0 2px rgba(255, 27, 27, 0.356);
+    }
+      40%{
+        border:4px double rgb(3, 184, 160);
+        box-shadow: 
+        5px -5px 0 2px rgba(240, 170, 89, 0.432),
+        5px 5px 0 2px rgba(195, 0, 255, 0.253),
+        -5px -5px 0 2px rgba(17, 0, 255, 0.37),
+        -3px 3px 0 2px rgba(7, 255, 243, 0.37),
+        -3px -3px 0 2px rgba(10, 216, 10, 0.473),
+        3px 3px 0 2px rgba(217, 255, 0, 0.37),
+        3px -3px 0 2px rgba(255, 27, 27, 0.356);
+        }
+        80%{
+          box-shadow: 
+          3px -3px 0 2px rgba(240, 170, 89, 0.432),
+          -5px 5px 0 2px rgba(195, 0, 255, 0.253),
+          -5px -5px 0 2px rgba(17, 0, 255, 0.37),
+          5px 5px 0 2px rgba(7, 255, 243, 0.37),
+          -3px 3px 0 2px rgba(10, 216, 10, 0.473),
+          -3px -3px 0 2px rgba(217, 255, 0, 0.37),
+          5px -5px 0 2px rgba(255, 27, 27, 0.356);
+
+        }
+        100%
+        {
+          border:4px double rgb(3, 184, 160);
+          box-shadow: 
+        3px -3px 0 2px rgba(240, 170, 89, 0.432),
+        -3px -3px 0 2px rgba(195, 0, 255, 0.253),
+        3px 3px 0 2px rgba(17, 0, 255, 0.37),
+        -5px -5px 0 2px rgba(7, 255, 243, 0.37),
+        5px 5px 0 2px rgba(10, 216, 10, 0.473),
+        -5px 5px 0 2px rgba(217, 255, 0, 0.37),
+        5px -5px 0 2px rgba(255, 27, 27, 0.356);
+        }
+}
+
+@keyframes for32
+{
+  0%
+  {
+    border:4px dashed rgb(132, 11, 148);
+    transform:translateX(-100px) rotate(360deg);
+  }
+    50%{
+      transform:translateX(0) rotate(180deg);
+      }
+      100%{
+
+        border:4px dashed rgb(132, 11, 148);
+        transform:translateX(100px) rotate(0deg);
+      }
+}
+
+@keyframes for31
+{
+  0%
+  {
+    border:4px dashed rgb(103, 170, 40);
+    transform:translateX(100px) rotate(0deg);
+  }
+    50%{
+      
+      transform:translateX(0) rotate(180deg);
+      }
+
+      100%{
+        border:4px dashed rgb(103, 170, 40);
+        transform:translateX(-100px) rotate(360deg);
+      }
+}
+
+
+.l1 {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background:lightskyblue;
+    margin-top: 5%;
+    margin-left: 20%;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(135deg);
+
+
+  animation-name: drop,forR31;
+  animation-delay: 1s,10s;
+  animation-duration: 6s,3s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:1,infinite;
+}
+
+.r1{
+  animation-name: forR1, for31;
+  animation-delay: 7s,10s;
+  animation-duration: 3s,8s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:1,infinite;
+  animation-direction:normal,alternate;
+}
+
+.r2{
+    
+    animation-name: forR2, for32;
+    animation-delay: 7s,10s;
+    animation-duration: 3s,8s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1,infinite;
+    animation-direction:normal,alternate;
+  }

@@ -1,0 +1,132 @@
+body {
+    width:100%;
+    height:100%;
+
+    position: relative;
+    
+    overflow: hidden;
+    
+    background-color: #f1f1f1;
+}
+
+
+.round {
+    position: absolute;
+    top: 240px;
+    left: 40%;
+
+
+    padding: 130px 57px;
+    margin: auto;
+    background-color: #2e54b7;
+    border: 1px solid #2e54b7;
+    border-radius: 50%;
+
+    font-family:'Arial', Times, serif;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    animation: 5s infinite alternate green-transfusion;
+}
+
+.white-line {
+    position: absolute;
+
+    width:140%;
+    height:auto;
+
+    top: 100px;
+    left: -150px;
+
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+
+    transform:rotate(-10deg);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 160px;
+    text-transform: uppercase;
+    padding: 0px;
+
+    animation: 
+    10s infinite white-anim,
+    5s infinite alternate red-transfusion;
+}
+
+.gray-line {
+    position: absolute;
+
+    width:140%;
+    height:auto;
+
+    top: 190px;
+    left: -150px;
+
+    background-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+
+    transform:rotate(10deg);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 160px;
+    text-transform: uppercase;
+    color: #2a53b3;
+
+    padding: 0;
+
+    animation: 
+    10s infinite gray-anim, 
+    5s infinite alternate orange-transfusion;
+}
+
+@keyframes red-transfusion {
+    to {
+        background-color: #911e42;
+        border-color: #911e42;
+        color: #ffa2c0;
+    }
+}
+
+@keyframes orange-transfusion {
+    to {
+        background-color: #ff8800;
+        border-color: #ff8800;
+        color: #ffcb90;
+    }
+}
+
+@keyframes green-transfusion {
+    to {
+        background-color: #43d29d;
+        border-color: #43d29d;
+        color: #237255;
+    }
+}
+
+@keyframes white-anim {
+    25% {
+        left: -45px;
+    }
+    
+    75% {
+        left: -360px;
+        
+    }
+
+    to {
+        left: -150px;
+    }
+}
+
+@keyframes gray-anim {
+    25% {
+        left: -360px;
+    }
+
+    75% {
+        left: -45px;
+    }
+
+    to {
+        left: -150px;
+    }
+}
