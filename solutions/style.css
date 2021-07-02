@@ -1,0 +1,49 @@
+p
+{
+  position:absolute;
+  color:white;
+}
+.circles
+{
+  width:1200px;
+  height:400px;
+  background-color:black;
+  position:absolute;
+}
+.circles svg
+{
+  margin-left:5%;
+}
+.number
+{
+  position:absolute;
+  margin-left:34%;
+  margin-top:4%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 28px;
+}
+.heading
+{
+  position:absolute;
+  margin-left:36%;
+  margin-top:5%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:3px;
+  font-size: 34px;
+}
+.heading p
+{
+width:500px;  
+}
+.text
+{
+  position:absolute;
+  margin-left:36%;
+  margin-top:10%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
+.text p
+{
+ width:340px; 
+}
